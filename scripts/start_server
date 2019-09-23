@@ -1,2 +1,2 @@
 #!/bin/bash
-service tomcat start
+java -jar awsproject-1.0-SNAPSHOT.war

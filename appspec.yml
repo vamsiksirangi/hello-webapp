@@ -2,11 +2,8 @@ version: 0.0
 os: linux
 files:
   - source: /target/awsproject-1.0-SNAPSHOT.war
-    destination: /tmp/codedeploy-deployment-staging-area/ /usr/share/tomcat/webapps/
+    destination: /home/ec2-user/
 hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies
-      timeout: 300
   ApplicationStart:
     - location: scripts/write_codedeploy_config.sh
     - location: scripts/start_server
