@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /target/awsproject-1.0-SNAPSHOT.war
-    destination: /tmp/codedeploy-deployment-staging-area/
+    destination: /tmp/codedeploy-deployment-staging-area/ /usr/share/tomcat/webapps/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
