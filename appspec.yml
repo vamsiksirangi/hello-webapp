@@ -4,9 +4,6 @@ files:
   - source: /target/awsproject-1.0-SNAPSHOT.war
     destination: /tmp/codedeploy-deployment-staging-area/
 hooks:
-  ApplicationStop:
-    - location: scripts/stop_server
-      timeout: 300
   BeforeInstall:
     - location: scripts/install_dependencies
       timeout: 300
