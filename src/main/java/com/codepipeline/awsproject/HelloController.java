@@ -15,6 +15,6 @@ public class HelloController {
 
     @GetMapping("/test")
     public String test(){
-        return "Hello.. This is my first beanstalk instance";
+        return "Hello.. This is my first pipeline being deployed in EC2 instance";
     }
 }
