@@ -1,19 +1,11 @@
-version: 0.2
+version: 0.1
+
 phases:
-  install:
-    runtime-versions:
-        java: openjdk7
-  pre_build:
-    commands:
-      - echo "Entered the pre-build phase"
   build:
     commands:
-      - echo "Entered build phase"
-      - mvn clean package
-  post_build:
-    commands:
-      - echo "Entered the post-build phase"
-      - cp target/*.war .
+      - echo Build completed on `date`
+      - mvn package
+
 artifacts:
   files:
     - '**/*'
