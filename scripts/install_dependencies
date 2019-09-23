@@ -1,2 +1,2 @@
 #!/bin/bash
-yum install -y tomcat7
+yum install -y tomcat8
